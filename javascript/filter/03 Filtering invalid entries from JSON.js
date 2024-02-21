@@ -16,14 +16,18 @@ const arr = [
     {id: "undefined"},
 ];
 
+let invalidEntries;
+
 
 function filterByID() {
+ 
 }
 
-const arrById = [];
+const arrById = undefined;
 
 console.log("Number of Invalid Entries = ", invalidEntries);
-console.log('arrById: ', arrById);
+// console.log("Number of Invalid Entries = ", invalidEntries.length);
+console.log('arrById: ', JSON.stringify(arrById));
 
 
 
