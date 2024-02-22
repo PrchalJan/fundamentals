@@ -12,9 +12,10 @@ const names = ["JC63", "Bob132", "Ursula89", "Ben96", "Mery126", "Marta200", "Ur
 
 const greatIDs = names
     .map((name)=> parseInt(name.match(/[0-9]+/)[0], 10))
-    .filter(()=>{
+    .filter((id, index, array)=>{
         // Without the arr argument, there's no way to easily access the
         // intermediate array without saving it to a variable.
+
     })
 
     // The array argument is not the array that is being built -- there is no way to
