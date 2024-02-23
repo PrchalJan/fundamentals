@@ -1,0 +1,1 @@
+// 01 How reduce() works without an initial value;
