@@ -16,7 +16,9 @@ function doSomethingCritical(num){
     })
 }
 function doSomethingOptional(num){
+    
     return new Promise((resolve)=>{
+        // throw new Error("Error occured at doSomethingOptional");
         resolve(num+1)
     })
 }
