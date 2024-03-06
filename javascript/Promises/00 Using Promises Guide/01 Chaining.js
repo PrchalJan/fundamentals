@@ -256,3 +256,25 @@ doSomething()
     .then(()=>{
         console.log(listOfIngredients);
     })
+
+
+// Using async/await can help you write code that's more intuitive and resembles
+// synchronous code. Below is the same example using async/await
+
+async function logIngredients(){
+    const url = await doSomething();
+    const res = await fetch(url);
+    const data = "Potato";
+    listOfIngredients.push(data);
+    console.log(listOfIngredients);
+}
+
+// Note how the code looks exactly like synchronous code, except for the await
+// keywords in front of promises. One of the only tradeoffs is that it may be easy to
+// forget the await keyword, which can only be fiexe when there's a type mismatch
+// (e.g. trying to usse a promise ass a value).
+
+// async / await builds on promises -- for example, doSomething() is the same function
+// as before, so there's minimal refactoring needed to change from promises to
+// async / await. You can read more about the async / await syntax in the async functions
+// and await references.

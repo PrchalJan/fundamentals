@@ -27,3 +27,5 @@ createAudioFileAsync(audioSettings, successCallback, failureCallback);
 // callbacks to it instead:
 
 createAudioFileAsync(audioSettings).then(successCallback, failureCallback);
+
+// This convention has several advantages. We will explore each one.

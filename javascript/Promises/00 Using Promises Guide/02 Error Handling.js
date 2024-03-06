@@ -115,3 +115,9 @@ async function foo(num) {
 }
 
 foo(1);
+
+// Promises solve a fundamental flaw with the callback pyramid of doom, by catching
+// all errors, even thrown exceptions and programming errors. THis is essential for
+// functional composition of asynchronous operations. All errors are now handled by
+// the catch() method at the end of the chain, and you should almost never need to
+// use try / catch without using async / await.

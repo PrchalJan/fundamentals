@@ -10,9 +10,7 @@
 const pipe = 
     (...functions) =>
     (initialValue) =>
-        functions.reduce((acc, fn)=>fn(acc),initialValue)
-
-
+        functions.reduce((acc, fn)=>fn(acc), initialValue)
 
 // Building blocks to use for composition
 const double = (x)=>x*2;
